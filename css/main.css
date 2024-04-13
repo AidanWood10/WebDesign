@@ -6,13 +6,23 @@ header{
     background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
 }
 
 h1{
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: xx-large;
+    display: inline;
 }
+
 h2{
     font-family: 'Courier New', Courier, monospace;
     color: black;
@@ -57,6 +67,16 @@ footer{
 nav li{
     border: 2px solid;
     background-color: green;
+    list-style-type: none;
+    float: left;
+    width: 15%;
+    padding: 16px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav li a{
@@ -66,7 +86,7 @@ nav li a{
 }
 
 Nav li :hover{
-    background-color: darkgreen;
+    background-color: black;
 }
 
 .active{
