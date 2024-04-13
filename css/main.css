@@ -85,9 +85,10 @@ nav li a{
     text-decoration: none;
 }
 
-Nav li :hover{
+nav li:hover {
     background-color: black;
 }
+
 
 .active{
     background-color: darkgreen;
