@@ -20,7 +20,7 @@ h2{
 h3{
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    font-size: x-large;
+    font-size: large;
 }
 h4{
     font-family: 'Courier New', Courier, monospace;
@@ -52,4 +52,42 @@ aside{
 footer{
     background-color: green;
     border-radius: 10px;
+}
+
+nav li{
+    border: 2px solid;
+    background-color: green;
+}
+
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+Nav li :hover{
+    background-color: darkgreen;
+}
+
+.active{
+    background-color: darkgreen;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table th, table td{
+    border: 2px solid #F0F0F0;
+}
+Table tr:nth-child(even){
+    background-color: #F2F2F2;
+}
+Table tr:hover{
+    background-color: grey;
+}
+Table th{
+    background-color: green;
+    color: white;
 }
