@@ -65,7 +65,7 @@ footer{
 }
 
 nav li{
-    border: 2px solid;
+    border: 2px solid white;
     background-color: green;
     list-style-type: none;
     float: left;
@@ -111,4 +111,14 @@ Table tr:hover{
 Table th{
     background-color: green;
     color: white;
+}
+
+.left-col{
+    text-align: left;
+    width: 70%;
+}
+
+.right-col{
+    text-align: right;
+    width: 30%;
 }
