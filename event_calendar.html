@@ -66,7 +66,16 @@
                         <th>W12</th><td></td><td></td><td></td><td></td><td></td><td>Photography workshop <br/> In person at the park</td><td></td>
                     </tr>
                 </table>    
-            </div>    
+            </div>
+            
+            <p>Want to recommend an event? Tell us below!</p>
+            <form name="events">
+                <label for="event_title">Event Title:</label><br>
+                <input type="text" id="event_title" name="event_title" placeholder="Enter event title"><br>
+                <label for="event_date">Event Date:</label><br>
+                <input type="date" id="event_date" name="event_date"><br><br>
+                <button type="button" onclick="submitEvent()">Submit Event</button>
+            </form>
         </main>
 
         <aside> </aside>
