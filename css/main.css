@@ -80,6 +80,7 @@ nav ul{
 }
 
 nav li a{
+    color: white;
     text-decoration: none;
 }
 
@@ -112,11 +113,12 @@ Table th{
 }
 
 .left-col{
-    text-align: left;
-    width: 70%;
+    float: left;
+    width: 50%;
 }
 
 .right-col{
-    text-align: right;
+    float: left;
     width: 30%;
 }
+
