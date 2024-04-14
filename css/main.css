@@ -113,11 +113,13 @@ Table th{
 }
 
 .left-col{
+    background-color: white;
     float: left;
     width: 50%;
 }
 
 .right-col{
+    background-color: white;
     float: left;
     width: 30%;
 }
