@@ -40,8 +40,12 @@
                             <input type="text" comments="comments" value=""/> <br/>
                             <label for="attachments">Add an attachment:</label>
                             <input type="file" id="attachments" name="attachments" accept="image/png, image/jpeg" />
+                            <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button> 
                         </fieldset>
                     </form>
+                    <div id="form_outcome">
+                        <p></p>
+                    </div>
                 </div>
                 <div class ="right-col">
                     <h3>Social Media</h3>
