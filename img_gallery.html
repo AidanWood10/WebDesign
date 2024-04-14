@@ -6,12 +6,13 @@
         <link rel='stylesheet' href='css/main.css'>
     </head>
 
+
     <body>
         <header>
             <h1>Photography Society</h1>
             <img src="images/logo.png" alt="Picture of a camera"/> 
         </header>
-
+    
         <nav>
             <ul>
                 <li class="active"><a href="index.html">Home page</a></li>
@@ -21,7 +22,7 @@
                 <li class="active"><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
-
+    
         <main>
             <div id="img-gallery" class="container"> 
                 <div class="row"> 
@@ -43,9 +44,27 @@
                 </div> 
             </div>
         </main>
-
+    
         <aside> </aside>
-
+    
         <footer> </footer>
+    
+        <script> 
+            // Get all images with the 'gallery-img' class
+            var galleryImages = document.querySelectorAll('.gallery-img');
+    
+            // Loop through each image and attach event listeners
+            galleryImages.forEach(function(image) {
+                // Add event listener for mouseover
+                image.addEventListener("mouseover", function() {
+                    this.style.border = "solid blue 2px";
+                });
+    
+                // Add event listener for mouseout
+                image.addEventListener("mouseout", function() {
+                    this.style.border = "none";
+                });
+            });
+        </script>
     </body>
 </html>
