@@ -112,6 +112,11 @@ Table th{
     color: white;
 }
 
+.content-container {
+    background-color: white;
+    overflow: hidden; /* Clearfix */
+}
+
 .left-col{
     background-color: white;
     float: left;
