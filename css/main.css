@@ -132,3 +132,15 @@ Table th{
 fieldset {
     margin-bottom: 20px; /* Adjust the value as needed */
 }
+
+.gallery-img{
+    width: 100%;
+}
+
+.img-gallery{
+    padding-top: 10px;
+}
+
+.img-gallery.row{
+    margin-bottom: 10px;
+}
