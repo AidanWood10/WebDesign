@@ -129,3 +129,6 @@ Table th{
     width: 30%;
 }
 
+fieldset {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
