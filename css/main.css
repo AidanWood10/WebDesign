@@ -53,6 +53,7 @@ p{
 main{
     background-color: white;
     border-radius: 10px;
+    width: 70%;
 }
 
 aside{
@@ -64,6 +65,11 @@ footer{
     border-radius: 10px;
 }
 
+nav{
+    float: left;
+    width: 20%;
+    margin-right: 20px;
+}
 nav li{
     border: 2px solid white;
     background-color: green;
