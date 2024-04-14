@@ -1,3 +1,21 @@
+<script> 
+    function submit_event() { 
+        var title = document.forms["event"]["event_title"].value; 
+        var date = document.forms["event"]["event_date"].value; 
+        if (title == "") { 
+            alert("An event must have a title!"); 
+    } 
+    else { 
+        if (date.length == 0) { 
+            alert("An event must have a date!"); 
+        } 
+        else { 
+            alert("Event submitted! The society will contact you soon!"); 
+             } 
+         } 
+    } 
+    </script>
+
 <html>
     <head>
         <title>Photography Society</title>
@@ -74,7 +92,7 @@
                 <input type="text" id="event_title" name="event_title" placeholder="Enter event title"><br>
                 <label for="event_date">Event Date:</label><br>
                 <input type="date" id="event_date" name="event_date"><br><br>
-                <button type="button" onclick="submitEvent()">Submit Event</button>
+                <button type="button" onclick="submit_event()">Submit Event</button>
             </form>
         </main>
 
