@@ -84,12 +84,12 @@
     </script>
     
     <script>
-        function websiteRedirect(clickedImage) {
-            var imageUrl = clickedImage.src;
+        function websiteRedirect(this) {
+            var imageUrl = this.src;
     
             if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
                 window.location.href = "https://aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
-                
+
             } else if (imageUrl === "images/AberdeenBeach.jpg") {
                 window.location.href = "https://visitscotland.com/info/see-do/aberdeen-beach-p2555521";
 
