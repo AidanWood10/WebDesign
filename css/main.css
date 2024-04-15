@@ -141,31 +141,25 @@ Table th{
     width: 30%;
 }
 
-.recc-left-col, .recc-right-col {
+.recc-left-col,
+.recc-right-col {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    float: left;
+    width: 100%; /* Initially, both columns take up the full width */
 }
 
-.recc-left-col > *:not(:last-child),.recc-right-col > *:not(:last-child) {
+.recc-left-col > *:not(:last-child),
+.recc-right-col > *:not(:last-child) {
     margin-bottom: 20px; /* Add space between each entry */
 }
 
 @media (min-width: 768px) {
+    /* Adjust width for larger screens */
     .recc-left-col,
     .recc-right-col {
-        flex-direction: row; /* Display items in a row */
-        justify-content: space-between; /* Distribute items evenly */
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
-    }
-
-    .recc-left-col,
-    .recc-right-col > * {
-        width: 48%; /* Each column takes up 48% of the width to accommodate space between them */
+        width: 50%; /* Each column takes up 50% of the width on screens larger than 768px */
     }
 }
-
 
 .aside-left-col {
     flex: 0 0 auto; /* Prevent shrinking */
