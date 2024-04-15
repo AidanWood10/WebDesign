@@ -147,7 +147,11 @@ Table th{
 
 .aside-right-col {
     flex: 1; /* Allow text to expand and fill remaining space */
-}
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically */
+} /*Allow text to expand and fill remaining space */
+
 
 fieldset {
     margin-bottom: 20px; /* Adjust the value as needed */
