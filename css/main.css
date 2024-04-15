@@ -189,7 +189,8 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.youtubeVid{
+.video{
+    text-align: center;
     margin: 5px;
     margin-bottom: 30px;
 }
