@@ -140,6 +140,18 @@ Table th{
     width: 30%;
 }
 
+.recc-left-col{
+    background-color: white;
+    float: left;
+    width: 45%;
+}
+
+.recc-right-col{
+    background-color: white;
+    float: right;
+    width: 45;
+}
+
 .aside-left-col {
     flex: 0 0 auto; /* Prevent shrinking */
     margin-right: 20px; /* Add some spacing between the image and text */
