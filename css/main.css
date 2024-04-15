@@ -218,3 +218,14 @@ fieldset {
     margin: 6px;
     text-align: center; /* Center-align text within the container */
 }
+
+.carousel-caption{
+    position: absolute;
+    left: 15%;
+    bottom: 1.25rem;
+    right: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
