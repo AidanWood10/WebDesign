@@ -140,17 +140,21 @@ Table th{
     width: 30%;
 }
 
-.recc-left-col{
+.recc-left-col,
+.recc-right-col {
     background-color: white;
     float: left;
-    width: 45%;
+    width: 100%; /* Initially, both columns take up the full width */
 }
 
-.recc-right-col{
-    background-color: white;
-    float: right;
-    width: 45;
+@media (min-width: 768px) {
+    /* Adjust width for larger screens */
+    .recc-left-col,
+    .recc-right-col {
+        width: 50%; /* Each column takes up 50% of the width on screens larger than 768px */
+    }
 }
+
 
 .aside-left-col {
     flex: 0 0 auto; /* Prevent shrinking */
