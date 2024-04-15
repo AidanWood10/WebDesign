@@ -161,19 +161,19 @@ Table th{
 }
 
 .aside-left-col {
-    flex: 0 0 auto; /* Prevent shrinking */
-    margin-right: 20px; /* Add some spacing between the image and text */
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: 20px; 
 }
 
 .aside-right-col {
-    flex: 1; /* Allow text to expand and fill remaining space */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack text vertically */
-} /*Allow text to expand and fill remaining space */
-
+    display: flex; 
+    flex: 1; 
+    flex-direction: column; 
+}
 
 fieldset {
-    margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; 
 }
 
 .gallery-img{
@@ -194,11 +194,13 @@ fieldset {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 6px;
 }
 
 .video-entry {
     margin: 20px;
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 50px; 
 }
 
 .video-entry h3 {
