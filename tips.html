@@ -24,6 +24,10 @@
     </nav>
 
     <main>
+        <div class="title-container">
+            <h1>Cool places to take photos!</h1>
+        </div> 
+
         <div class="video-container"> 
             <div class="video-entry"> 
                 <h3>Duthie park winter gardens</h3>
@@ -67,6 +71,10 @@
 
             image.addEventListener("mouseover", function() {
                 this.style.border = "solid green 2px";
+            });
+
+            image.addEventListener("mouseout", function() {
+                    this.style.border = "none";
             });
 
             image.addEventListener("click", function() {
