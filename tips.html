@@ -59,5 +59,23 @@
     <footer>
         <p>Copyright Aidan Wood 2024</p>    
     </footer>
+
+    <script> 
+        // Get all images with the 'gallery-img' class
+        var galleryImages = document.querySelectorAll('.gallery-img');
+
+        // Loop through each image and attach event listeners
+        galleryImages.forEach(function(image) {
+            // Add event listener for mouseover
+            image.addEventListener("mouseover", function() {
+                this.style.border = "solid blue 2px";
+            });
+
+            // Add event listener for mouseout
+            image.addEventListener("mouseout", function() {
+                this.style.border = "none";
+            });
+        });
+    </script>
 </body>
 </html>
