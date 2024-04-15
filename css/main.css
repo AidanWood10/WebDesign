@@ -163,15 +163,11 @@ Table th{
 }
 
 .aside-left-col {
-    display: flex;
-    flex: 0 0 auto;
-    margin-right: 20px; 
+    width: 20%; 
 }
 
 .aside-right-col {
-    display: flex; 
-    flex: 1; 
-    flex-direction: column; 
+    width: 70%;
 }
 
 fieldset {
