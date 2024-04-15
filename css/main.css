@@ -218,6 +218,9 @@ fieldset {
     margin: 6px;
     text-align: center; /* Center-align text within the container */
 }
+.carousel-item{
+    position: relative;
+}
 
 .carousel-caption{
     position: absolute;
