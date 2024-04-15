@@ -200,3 +200,8 @@ fieldset {
     margin-bottom: 30px;
     margin-right: 15px;
 }
+
+.title-container {
+    margin: 6px;
+    text-align: center; /* Center-align text within the container */
+}
