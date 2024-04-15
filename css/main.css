@@ -205,11 +205,6 @@ fieldset {
     margin-bottom: 10px; 
 }
 
-.video-entry iframe {
-    width: 80%; 
-    height: auto; 
-}
-
 .camera-container {
     text-align: center; /* Center-align all content */
     margin: 5px;
