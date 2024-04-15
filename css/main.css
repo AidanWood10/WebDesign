@@ -189,10 +189,26 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.video{
-    text-align: center;
-    margin: 5px;
-    margin-bottom: 30px;
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-entry {
+    margin: 20px;
+    text-align: center; 
+}
+
+.video-entry h3 {
+    margin-bottom: 10px; 
+}
+
+.video-entry iframe {
+    width: 80%; 
+    max-width: 640px; 
+    height: auto; 
 }
 
 .camera-container {
