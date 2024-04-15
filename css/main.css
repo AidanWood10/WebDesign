@@ -219,6 +219,7 @@ fieldset {
     text-align: center; /* Center-align text within the container */
 }
 .carousel-item{
+    height: 400px;
     position: relative;
 }
 
