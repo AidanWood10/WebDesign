@@ -84,19 +84,20 @@
     </script>
     
     <script>
-        function websiteRedirect() {
+        function websiteRedirect(clickedImage) {
             var imageUrl = clickedImage.src;
     
-        if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
-            window.location.href = "aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
+            if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
+                window.location.href = "https://aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
+                
+            } else if (imageUrl === "images/AberdeenBeach.jpg") {
+                window.location.href = "https://visitscotland.com/info/see-do/aberdeen-beach-p2555521";
 
-        } else if (imageUrl === "images/AberdeenBeach.jpg") {
-            window.location.href = "visitscotland.com/info/see-do/aberdeen-beach-p2555521";
-
-        } else if (imageUrl === "images/MarischalCollege.jpg") {
-            window.location.href = "abdn.ac.uk/about/campus/marischal-college-394.php";
+            } else if (imageUrl === "images/MarischalCollege.jpg") {
+                window.location.href = "https://abdn.ac.uk/about/campus/marischal-college-394.php";
+            }
         }
-    }
     </script>    
+    
 </body>
 </html>
