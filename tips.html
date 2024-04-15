@@ -19,7 +19,7 @@
             <li class="active"><a href="current_members.html">Current Members</a></li>
             <li class="active"><a href="contact_us.html">Contact Us</a></li>
             <li class="active"><a href="reccomendations.html">Reccomendations</a></li>
-            <li class="active"><a href="tips.html">Tips</a></li>
+            <li class="active"><a href="tips.html">Photo Spots</a></li>
         </ul>
     </nav>
 
@@ -66,39 +66,26 @@
 
     <script> 
         var galleryImages = document.querySelectorAll('.gallery-img');
-    
+
         galleryImages.forEach(function(image) {
-    
-            image.addEventListener("mouseover", function() {
-                this.style.border = "solid green 2px";
-            });
-    
-            image.addEventListener("mouseout", function() {
-                this.style.border = "none";
-            });
-    
+
             image.addEventListener("click", function() {
-                websiteRedirect(image); // Pass 'image' to the function
+                websiteRedirect(image);
             });
         });
-    </script>
+        
+        function websiteRedirect(image) {
+            var imageUrl = image.src;
     
-    
-    <script>
-        function websiteRedirect(clickedImage) {
-            var imageUrl = clickedImage.src;
-    
-            if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
+            if (imageUrl.endsWith("DuthieParkWinterGardens.jpg")) {
                 window.location.href = "https://aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
-                
-            } else if (imageUrl === "images/AberdeenBeach.jpg") {
+            } else if (imageUrl.endsWith("AberdeenBeach.jpg")) {
                 window.location.href = "https://visitscotland.com/info/see-do/aberdeen-beach-p2555521";
-
-            } else if (imageUrl === "images/MarischalCollege.jpg") {
+            } else if (imageUrl.endsWith("MarischalCollege.jpg")) {
                 window.location.href = "https://abdn.ac.uk/about/campus/marischal-college-394.php";
             }
         }
-    </script>    
+    </script>  
     
 </body>
 </html>
