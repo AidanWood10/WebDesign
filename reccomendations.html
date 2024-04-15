@@ -79,13 +79,34 @@
         </main>
     
         <aside>
-            <a class="twitter-timeline" data-width="400" data-height="900" href="https://twitter.com/CanonUKandIE?ref_src=twsrc%5Etfw">Tweets by CanonUKandIE</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-            <a class="twitter-timeline" data-width="400" data-height="900" href="https://twitter.com/SonyElectronics?ref_src=twsrc%5Etfw">Tweets by SonyElectronics</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-            <a class="twitter-timeline" data-width="400" data-height="900" href="https://twitter.com/panasonic?ref_src=twsrc%5Etfw">Tweets by panasonic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            <div id="twitter1" class="twitter-timeline" data-width="400" data-height="900" data-theme="light">
+                <a href="https://twitter.com/CanonUKandIE?ref_src=twsrc%5Etfw">Tweets by CanonUKandIE</a>
+            </div>
+            <div id="twitter2" class="twitter-timeline" data-width="400" data-height="900" data-theme="light">
+                <a href="https://twitter.com/SonyElectronics?ref_src=twsrc%5Etfw">Tweets by SonyElectronics</a>
+            </div>
+            <div id="twitter3" class="twitter-timeline" data-width="400" data-height="900" data-theme="light">
+                <a href="https://twitter.com/panasonic?ref_src=twsrc%5Etfw">Tweets by panasonic</a>
+            </div>
         </aside>
     
         <footer>
             <p>Copyright Aidan Wood 2024</p>    
         </footer>
+    
+        <script>
+            window.onload = function() {
+                twttr.widgets.load(
+                    document.getElementById("twitter1")
+                );
+                twttr.widgets.load(
+                    document.getElementById("twitter2")
+                );
+                twttr.widgets.load(
+                    document.getElementById("twitter3")
+                );
+            };
+        </script>
+
     </body>
 </html>
