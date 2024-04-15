@@ -66,30 +66,31 @@
 
     <script> 
         var galleryImages = document.querySelectorAll('.gallery-img');
-
+    
         galleryImages.forEach(function(image) {
-
+    
             image.addEventListener("mouseover", function() {
                 this.style.border = "solid green 2px";
             });
-
+    
             image.addEventListener("mouseout", function() {
-                    this.style.border = "none";
+                this.style.border = "none";
             });
-
+    
             image.addEventListener("click", function() {
-                websiteRedirect(this);
+                websiteRedirect(image); // Pass 'image' to the function
             });
         });
     </script>
     
+    
     <script>
-        function websiteRedirect(this) {
-            var imageUrl = this.src;
+        function websiteRedirect(clickedImage) {
+            var imageUrl = clickedImage.src;
     
             if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
                 window.location.href = "https://aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
-
+                
             } else if (imageUrl === "images/AberdeenBeach.jpg") {
                 window.location.href = "https://visitscotland.com/info/see-do/aberdeen-beach-p2555521";
 
