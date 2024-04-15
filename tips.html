@@ -61,21 +61,50 @@
     </footer>
 
     <script> 
-        // Get all images with the 'gallery-img' class
         var galleryImages = document.querySelectorAll('.gallery-img');
 
-        // Loop through each image and attach event listeners
         galleryImages.forEach(function(image) {
-            // Add event listener for mouseover
+
             image.addEventListener("mouseover", function() {
                 this.style.border = "solid blue 2px";
             });
 
-            // Add event listener for mouseout
-            image.addEventListener("mouseout", function() {
-                this.style.border = "none";
+            image.addEventListener("click", function() {
+                websiteRedirect();
             });
         });
     </script>
+    
+    <script>
+        function websiteRedirect() {
+        var imageUrl = this.src;
+    
+        if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
+            window.location.href = "aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
+
+        } else if (imageUrl === "images/AberdeenBeach.jpg") {
+            window.location.href = "visitscotland.com/info/see-do/aberdeen-beach-p2555521";
+
+        } else if (imageUrl === "images/MarischalCollege.jpg") {
+            window.location.href = "abdn.ac.uk/about/campus/marischal-college-394.php";
+        }
+    }
+    </script>    
+
+    <script>
+        function websiteRedirect() {
+        var imageUrl = this.src;
+    
+        if (imageUrl === "images/DuthieParkWinterGardens.jpg") {
+            window.location.href = "aberdeencity.gov.uk/services/leisure-culture-and-parks/parks-and-gardens/duthie-park";
+
+        } else if (imageUrl === "images/AberdeenBeach.jpg") {
+            window.location.href = "visitscotland.com/info/see-do/aberdeen-beach-p2555521";
+
+        } else if (imageUrl === "images/MarischalCollege.jpg") {
+            window.location.href = "abdn.ac.uk/about/campus/marischal-college-394.php";
+        }
+    }
+    </script>    
 </body>
 </html>
