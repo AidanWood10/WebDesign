@@ -39,6 +39,7 @@ h4{
 h5{
     font-family: 'Courier New', Courier, monospace;
     color: black;
+    font-size: x-large;
 }
 h6{
     font-family: 'Courier New', Courier, monospace;
@@ -140,11 +141,15 @@ Table th{
     width: 30%;
 }
 
-.recc-left-col,
-.recc-right-col {
+.recc-left-col, .recc-right-col {
     background-color: white;
-    float: left;
-    width: 100%; /* Initially, both columns take up the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.recc-left-col > *:not(:last-child),.recc-right-col > *:not(:last-child) {
+    margin-bottom: 20px; /* Add space between each entry */
 }
 
 @media (min-width: 768px) {
