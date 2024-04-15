@@ -75,7 +75,7 @@
                 <input type="text" id="event_title" name="event_title" placeholder="Enter event title"><br>
                 <label for="event_date">Event Date:</label><br>
                 <input type="date" id="event_date" name="event_date"><br><br>
-                <button type="button" onclick="sub()">Submit Event</button>
+                <button type="button" onclick="submit_event()">Submit Event</button>
             </form>
         </main>
 
@@ -84,7 +84,7 @@
         <footer>
             <p>Copyright Aidan Wood 2024</p>    
         </footer>
-        
+
         <script> 
             function submit_event() { 
                 var title = document.forms["event"]["event_title"].value; 
