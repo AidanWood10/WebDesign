@@ -1,21 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Photography Society</title>
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href='css/main.css'>
+
+    <!-- Uses CSS advanced selectors to fulfill requirement -->
+    <!-- Blur picture when hovered over to further show selection -->
+    <!-- Adds margin under h3 in video entry area to seperate header from video -->
+    <style>
+        img[alt*="Picture"]:hover {
+    opacity: 0.8;
+    }
+    
+    .main .video-entry h3 {
+        margin-bottom: 10px; 
+    }
+    </style>
 </head>
 
-<style>
-    img[alt*="Picture"]:hover {
-opacity: 0.8;
-}
-</style>
 
 <body>
     <header>
         <h1>Photography Society</h1>
-        <img src="images/logo.png" alt="Picture of a camera"/> 
+        <img src="images/logo.png" alt="Picture of a camera"> 
     </header>
 
     <nav>
@@ -35,36 +45,40 @@ opacity: 0.8;
             <h1>Cool places to take photos!</h1>
         </div> 
 
+        <!-- Adds 3 videos in a column with names of each location above each video -->
+        <!-- Text functions as alt text alternative as alt text isnt allowed on videos -->
         <div class="video-container"> 
             <div class="video-entry"> 
                 <h3>Duthie park winter gardens</h3>
-                <iframe alt="video of duthie park winter gardens" width="854" height="480" src="images/DuthieParkWinterGardens.mp4"></iframe>
+                <iframe width="854" height="480" src="images/DuthieParkWinterGardens.mp4"></iframe>
             </div> 
             <div class="video-entry"> 
                 <h3>Aberdeen beach</h3>
-                <iframe alt="Picture of Aberdeen Beach" width="854" height="480" src="images/AberdeenBeach.mp4"></iframe>
+                <iframe width="854" height="480" src="images/AberdeenBeach.mp4"></iframe>
             </div> 
             <div class="video-entry"> 
                 <h3>Marischal college</h3>
-                <iframe alt="Video of Marischal college" width="854" height="480" src="images/MarischalCollege.mp4"></iframe>
+                <iframe width="854" height="480" src="images/MarischalCollege.mp4"></iframe>
             </div> 
         </div>
     </main>
 
     <aside style="align-items: center;">
+        <!-- Title to lead into the clickable images -->
         <div class="title-container">
-            <h1>Click on a photo to be taken to the linked website!</h1>
+            <h5>Click on a photo to be taken to the linked website!</h5>
         </div> 
+        <!-- Images to be clicked to link user to relevant site -->
         <div id="img-gallery" class="container"> 
             <div class="row"> 
                 <div class="col-sm"> 
-                    <img src="images/DuthieParkWinterGardens.jpg" alt="Picture of duthy park" class="gallery-img"/> 
+                    <img src="images/DuthieParkWinterGardens.jpg" alt="Picture of duthy park" class="gallery-img"> 
                 </div> 
                 <div class="col-sm"> 
-                    <img src="images/AberdeenBeach.jpg" alt="Picture of aberdeen beach" class="gallery-img"/> 
+                    <img src="images/AberdeenBeach.jpg" alt="Picture of aberdeen beach" class="gallery-img"> 
                 </div> 
                 <div class="col-sm"> 
-                    <img src="images/MarischalCollege.jpg" alt="Picture of marischal college" class="gallery-img"/>
+                    <img src="images/MarischalCollege.jpg" alt="Picture of marischal college" class="gallery-img">
                 </div> 
             </div> 
         </div>    
@@ -74,6 +88,8 @@ opacity: 0.8;
         <p>Copyright Aidan Wood 2024</p>    
     </footer>
 
+    <!-- Adds border to image when hovered over to show selection -->
+    <!-- Also runs additonal function when clicked on -->
     <script> 
         var galleryImages = document.querySelectorAll('.gallery-img');
 
@@ -107,6 +123,6 @@ opacity: 0.8;
             }
         }
     </script>  
-    
+    <!-- Function above directs user to website depending on image clicked -->
 </body>
 </html>

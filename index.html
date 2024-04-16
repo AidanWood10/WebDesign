@@ -1,7 +1,21 @@
+<!-- 
+Threat Model 
+Threat Source: Internal 
+Threat Agent: Human 
+Threat Intention: Intentional 
+Threat Motivation: Stealing user details 
+Threat Impact: Member accounts being stolen, impact depends on how many other places details are shared. 
+Threat Mitigation: Encrypt all user details and minimize the admins that have access to them. 
+--> 
 
-<html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- Head sets up website display name while also linking to relevant resources -->
     <head>
         <title>Photography Society</title>
+        <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
         <link rel='stylesheet' href='css/main.css'>
@@ -9,9 +23,11 @@
 
     <body>
         <header>
+            <!-- Website name is displayed next to small logo -->
             <h1>Photography Society</h1>
-            <img src="images/logo.png" alt="Picture of a camera"/> 
+            <img src="images/logo.png" alt="Picture of a camera"> 
 
+            <!-- Also includes a login form on the home page as seen below -->
             <form id="login-form" style="float: right; width: 25%;">
                 <input type="text" placeholder="Username" name="username">
                 <input type="password" placeholder="Password" name="password">
@@ -21,6 +37,7 @@
 
         <nav>
             <ul>
+                <!-- Links between pages are displayed under the header in a row -->
                 <li class="active"><a href="index.html">Home page</a></li>
                 <li class="active"><a href="img_gallery.html">Image gallery</a></li>
                 <li class="active"><a href="event_calendar.html">Event calendar</a></li>
@@ -32,13 +49,17 @@
         </nav>
 
         <main>
+            <!-- Div with extra margins is used to seperate main body from links -->
         <div style="margin-top: 6px;">
             <h3>Welcome to the Photography Society!</h3>
             <p>This is a website to find out information about our society</p>
         </div>
+
+        <!-- 3 carousel slides are used as decoration on the home page -->
         <div id="home-carousel" class="carousel slide" data-bs-ride="carousel"> 
             
             <div class="carousel-indicators">
+                <!-- These buttons allow users to skip between slides -->
                 <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -49,7 +70,7 @@
                 <!-- First slide -->
                 <div class="carousel-item active"> 
                     <img class="d-block w-100" src="images/Landscape.jpg" alt="First slide">
-                    <!-- Caption for the first slide -->
+                    <!-- Unique h6 header is used for a diff colour of text than usual -->
                     <div class="carousel-caption">
                         <h6>Photography can be used to capture grand landscapes.</h6>
                     </div>
@@ -77,24 +98,27 @@
         </main>
 
         <aside>
+            <!-- Unequal columns are used to display a small image along with text next to it to create a news story for the home page -->
             <div class="aside-left-col">
-                <img src="images/News.jpg" alt="Picture of a camera" style="margin: 30px;"/> 
+                <img src="images/News.jpg" alt="Picture of a camera" style="margin: 30px;"> 
             </div>
             <div class="aside-right-col">
                 <h5>New breakthrough in camera technology</h5>
                 <p>New technology implemented into modern cameras will allow for better and easier photos. Its hoped that this will get more people into the hobby</p>
             </div>
-        </aside>
+        </aside>    
 
+        <!-- Footer on each page shows copyright and my name -->
         <footer>
         <p>Copyright Aidan Wood 2024</p>    
         </footer>
 
+        <!-- Input checker for login options -->
         <script> 
             function submit_login() { 
                 var username = document.forms["login-form"]["username"].value; 
                 var password = document.forms["login-form"]["password"].value; 
-                if (title == "") { 
+                if (username == "") { 
                     alert("Please enter a username"); 
             } 
             else { 
