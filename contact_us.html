@@ -72,12 +72,13 @@
         <script> 
             function submit_contact() { 
                 var username = document.forms["contact-form"]["name"].value; 
-                var password = document.forms["contact-form"]["email"].value; 
+                var email = document.forms["contact-form"]["email"].value; 
+                var comments = document.forms["contact-form"]["comments"].value; 
                 if (username == "") { 
                     alert("Please enter a name"); 
             } 
             else { 
-                if (password == "") { 
+                if (email == "") { 
                     alert("Please enter a email");  
                 }
             else { 
