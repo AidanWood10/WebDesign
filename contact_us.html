@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>Photography Society</title>
@@ -27,11 +29,12 @@
         <main>
             <div class ="content-container">
                 <div class ="left-col">
+                    <!-- Header for page -->
                     <h3>Contact Us</h3>
                     <p>Use the form below, or follow us on social media</p>
                     <form>
                         <fieldset>
-                            
+                            <!-- Asks the user various form details to enter -->
                             <label for="name">Name:</label>
                             <input type="text" name="name" value=""/> <br/>
                             <label for="email">Email:</label>
@@ -42,6 +45,7 @@
                             <input type="text" comments="comments" value=""/> <br/>
                             <label for="attachments">Add an attachment:</label>
                             <input type="file" id="attachments" name="attachments" accept="image/png, image/jpeg" />
+                            <!-- Button only gives limited output as we have no backend -->
                             <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button> 
                         </fieldset>
                     </form>
@@ -49,9 +53,10 @@
                         <p></p>
                     </div>
                 </div>
+                <!-- Sets up a column on the right with a social media feed -->
                 <div class ="right-col">
                     <h3>Social Media</h3>
-                    <a class="twitter-timeline" data-width="300" data-height="900" href="https://twitter.com/RobertGordonUni?ref_src=twsrc%5Etfw">Tweets by RobertGordonUni</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    <a class="twitter-timeline" data-width="300" data-height="900" href="https://twitter.com/RobertGordonUni?ref_src=twsrc%5Etfw">Tweets by RobertGordonUni</a> <script async src="https://platform.twitter.com/widgets.js"></script> 
                 </div>
             </div>
         </main>
