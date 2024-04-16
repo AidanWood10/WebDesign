@@ -74,16 +74,17 @@
 
             image.addEventListener("click", function() {
                 websiteRedirect(image);
+            });
 
-                image.addEventListener("mouseover", function() {
-                    this.style.border = "solid blue 2px";
-                });
+            image.addEventListener("mouseover", function() {
+                this.style.border = "solid blue 2px";
+            });
     
                 // Add event listener for mouseout
-                image.addEventListener("mouseout", function() {
-                    this.style.border = "none";
-                });
-            });    
+            image.addEventListener("mouseout", function() {
+                this.style.border = "none";
+            });
+                
         });
         
         
