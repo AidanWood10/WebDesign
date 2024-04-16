@@ -1,7 +1,11 @@
+/*Sets the default background to grey */
 body{
     background-color: grey;
 }
 
+/*Sets the header to white */
+/*adds padding and border details for better visuals */
+/*Adds height to it so the login feature on the index page has room to fit */
 header{
     background-color: white;
     border-top-left-radius: 10px;
@@ -10,6 +14,8 @@ header{
     height: 100px;
 }
 
+/*Sets the header image to a 50x50 image */
+/*Also makes it appear on the left with a small margin so it doesnt touch the side */
 header img{
     width: 50px;
     height: 50px;
@@ -17,6 +23,7 @@ header img{
     margin-right: 10px;
 }
 
+/*Makes h1 a bolded and big font to be used for titles/sub-titles */
 h1{
     font-family: 'Courier New', Courier, monospace;
     color: black;
@@ -38,23 +45,28 @@ h4{
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
+/*Sets a smaller version of the main header text for when needed */
 h5{
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: x-large;
     font-weight: bold;
 }
+/*Make large and cyan for use in the image carousel */
 h6{
     font-family: 'Courier New', Courier, monospace;
     color: cyan;
     font-size: xx-large;
 }
+
 p{
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: medium;
 }
 
+/* Sets the main and asides background to white to stand out against the grey background*/
+/* Also includes border and margin details for styling */
 main{
     background-color: white;
     border-radius: 10px;
@@ -68,11 +80,13 @@ aside{
     border-radius: 10px;
 }
 
+/*Makes footer background green so it stands out from the rest of the page */
 footer{
     background-color: green;
     border-radius: 10px;
 }
 
+/*Makes the page links into green blocks*/
 nav li{
     border: 2px solid white;
     background-color: green;
@@ -88,11 +102,13 @@ nav ul{
     overflow: hidden;
 }
 
+/* Sets the link text white */
 nav li a{
     color: white;
     text-decoration: none;
 }
 
+/* Makes link block black when hovered over */
 nav li:hover {
     background-color: black;
 }
@@ -102,6 +118,8 @@ nav li:hover {
     background-color: darkgreen;
 }
 
+
+/* Sets details for the table to display across most of the screen with margins to seperate it from the rest of the page */
 table{
     border-collapse: collapse;
     font-family: 'Courier New', Courier, monospace;
@@ -112,6 +130,7 @@ table{
     margin-bottom: 15px;
 }
 
+/* Sets all the cells to be an equal size with equal size text */
 table th, table td{
     border: 2px solid #F0F0F0;
     font-size: 10pt;
@@ -122,9 +141,12 @@ table th, table td{
 Table tr:nth-child(even){
     background-color: #F2F2F2;
 }
+/* Changes cells to grey when hovered over */
 Table tr:hover{
     background-color: grey;
 }
+
+/*Sets header cells to have aligned text both horizontally and vertically */
 Table th{
     background-color: green;
     color: white;
@@ -132,23 +154,27 @@ Table th{
     vertical-align: middle;
 }
 
+/* Sets all content within the container to be displayed against a white background */
 .content-container {
     background-color: white;
     overflow: hidden;
 }
 
+/* Sets the left column to take up the left side of the column */
 .left-col{
     background-color: white;
     float: left;
     width: 50%;
 }
-
+/* Sets the right column to take up the right side of the screen */
+/* width doesnt add up to 100 so there is still room on both sides of the screen */
 .right-col{
     background-color: white;
     float: right;
     width: 30%;
 }
 
+/* Sets up columns for reccomendation page */
 .recc-left-col,
 .recc-right-col {
     background-color: white;
@@ -164,20 +190,24 @@ Table th{
     }
 }
 
+/* Sets the aside left column for holding the news image */
 .aside-left-col {
     width: 20%; 
 }
 
+/* Sets the right aside column for displaying news text */
 .aside-right-col {
     width: 70%;
     margin-left: 30px;
     margin-top: 30px;
 }
 
+/* Center-align text within the container */
 fieldset {
     margin-bottom: 20px; 
 }
 
+/* Sets margins and sizes for gallery images so they all fit correctly */
 .gallery-img{
     margin: 5px;
     width: 100%;
@@ -191,6 +221,7 @@ fieldset {
     margin-bottom: 10px;
 }
 
+/* Centers the videos and displays all 3 in one column as you scroll down */
 .video-container {
     display: flex;
     justify-content: center;
@@ -199,16 +230,14 @@ fieldset {
     margin: 6px;
 }
 
+/* centers the text with each video and creates space between videos */
 .video-entry {
     margin: 20px;
     text-align: center;
     margin-bottom: 50px; 
 }
 
-.video-entry h3 {
-    margin-bottom: 10px; 
-}
-
+/* Centers the images and text with each set of camera info along with margins to seperate them*/
 .camera-container {
     text-align: center; /* Center-align all content */
     margin: 5px;
@@ -220,11 +249,13 @@ fieldset {
     margin: 6px;
     text-align: center; /* Center-align text within the container */
 }
+/* Sets height for carousel images so they all display the same */
 .carousel-item{
     height: 400px;
     position: relative;
 }
 
+/* Adds placement and display options for the carousel captions so they display properly */
 .carousel-caption{
     position: absolute;
     left: 15%;
