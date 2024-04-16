@@ -31,15 +31,15 @@
         <div class="video-container"> 
             <div class="video-entry"> 
                 <h3>Duthie park winter gardens</h3>
-                <iframe width="854" height="480" src="images/DuthieParkWinterGardens.mp4"></iframe>
+                <iframe alt="video of duthie park winter gardens" width="854" height="480" src="images/DuthieParkWinterGardens.mp4"></iframe>
             </div> 
             <div class="video-entry"> 
                 <h3>Aberdeen beach</h3>
-                <iframe width="854" height="480" src="images/AberdeenBeach.mp4"></iframe>
+                <iframe alt="Picture of Aberdeen Beach" width="854" height="480" src="images/AberdeenBeach.mp4"></iframe>
             </div> 
             <div class="video-entry"> 
                 <h3>Marischal college</h3>
-                <iframe width="854" height="480" src="images/MarischalCollege.mp4"></iframe>
+                <iframe alt="Video of Marischal college" width="854" height="480" src="images/MarischalCollege.mp4"></iframe>
             </div> 
         </div>
     </main>
@@ -54,10 +54,10 @@
                     <img src="images/DuthieParkWinterGardens.jpg" alt="Picture of duthy park" class="gallery-img"/> 
                 </div> 
                 <div class="col-sm"> 
-                    <img src="images/AberdeenBeach.jpg" alt="Picture of a beach" class="gallery-img"/> 
+                    <img src="images/AberdeenBeach.jpg" alt="Picture of aberdeen beach" class="gallery-img"/> 
                 </div> 
                 <div class="col-sm"> 
-                    <img src="images/MarischalCollege.jpg" alt="Picture of a mushroom" class="gallery-img"/>
+                    <img src="images/MarischalCollege.jpg" alt="Picture of marischal college" class="gallery-img"/>
                 </div> 
             </div> 
         </div>    
@@ -74,8 +74,18 @@
 
             image.addEventListener("click", function() {
                 websiteRedirect(image);
-            });
+
+                image.addEventListener("mouseover", function() {
+                    this.style.border = "solid blue 2px";
+                });
+    
+                // Add event listener for mouseout
+                image.addEventListener("mouseout", function() {
+                    this.style.border = "none";
+                });
+            });    
         });
+        
         
         function websiteRedirect(image) {
             var imageUrl = image.src;
