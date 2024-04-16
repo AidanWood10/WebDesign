@@ -74,14 +74,19 @@
                 var username = document.forms["contact-form"]["name"].value; 
                 var password = document.forms["contact-form"]["email"].value; 
                 if (username == "") { 
-                    alert("Please enter a username"); 
+                    alert("Please enter a name"); 
             } 
             else { 
                 if (password == "") { 
-                    alert("Please enter a password");  
-                } 
+                    alert("Please enter a email");  
+                }
+            else { 
+                if (comments == "") { 
+                    alert("Please enter a comment");  
+                }
+                      
                 else { 
-                    alert("You have successfully logged in!"); 
+                    alert("We have recieved your message!"); 
                      } 
                  } 
             } 
