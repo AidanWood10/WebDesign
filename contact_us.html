@@ -33,7 +33,7 @@
                     <!-- Header for page -->
                     <h3>Contact Us</h3>
                     <p>Use the form below, or follow us on social media</p>
-                    <form>
+                    <form id="contact-form">
                         <fieldset>
                             <!-- Asks the user various form details to enter -->
                             <label for="name">Name:</label>
@@ -47,7 +47,7 @@
                             <label for="attachments">Add an attachment:</label>
                             <input type="file" id="attachments" name="attachments" accept="image/png, image/jpeg" >
                             <!-- Button only gives limited output as we have no backend -->
-                            <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button> 
+                            <button type="button" onclick="submit_contact()">Submit</button> 
                         </fieldset>
                     </form>
                     <div id="form_outcome">
@@ -67,5 +67,25 @@
         <footer>
             <p>Copyright Aidan Wood 2024</p>    
         </footer>
+
+                <!-- Input checker for login options -->
+        <script> 
+            function submit_contact() { 
+                var username = document.forms["contact-form"]["name"].value; 
+                var password = document.forms["contact-form"]["email"].value; 
+                if (username == "") { 
+                    alert("Please enter a username"); 
+            } 
+            else { 
+                if (password == "") { 
+                    alert("Please enter a password");  
+                } 
+                else { 
+                    alert("You have successfully logged in!"); 
+                     } 
+                 } 
+            } 
+        </script>
+        
     </body>
 </html>
